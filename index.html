@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ghozd</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/icons/icono.ico">
+  <meta name="description" content="Perfil de Ghozd">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta property="og:title" content="Ghozd">
+  <meta property="og:description" content="Perfil de Ghozd">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" as="image" href="assets/loader/carga.png" fetchpriority="high">
+</head>
+<body>
+  <noscript>
+    <style>.loader { display: none; }</style>
+    <p style="margin:auto;padding:24px;text-align:center;color:#f2f3f5">Activa JavaScript para ver este perfil.</p>
+  </noscript>
+
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader-content">
+      <img class="loader-art" src="assets/loader/carga.png" alt="" fetchpriority="high">
+      <p class="loader-label">ALGO TE ESTA MIRANDO</p>
+      <div class="loader-track" aria-hidden="true"><span></span></div>
+    </div>
+  </div>
+
+  <main class="stage" id="stage">
+    <div class="card" id="card">
+      <img class="layer back" id="bt" alt="">
+      <img class="layer back" id="bb" alt="">
+
+      <div class="body">
+        <div class="banner">
+          <img id="bannerImg" alt="">
+        </div>
+        <div class="fx" id="fxbox"><img id="fx" alt=""></div>
+
+        <div class="info">
+          <div class="av">
+            <div class="ring">
+              <img class="a" src="assets/profile/avatar.png" alt="Avatar">
+            </div>
+            <img class="deco" id="deco" alt="">
+            <div class="st" title="No molestar"><i></i></div>
+          </div>
+
+          <div class="nameblock">
+            <div class="name" id="name"></div>
+            <div class="handle" id="handle"></div>
+            <div class="badges" id="badges"></div>
+          </div>
+
+          <div class="panel">
+            <h3>Miembro desde</h3>
+            <div class="since">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M7 7h10a4 4 0 0 1 4 4v4a2.5 2.5 0 0 1-4.3 1.7L15.5 15h-7l-1.2 1.7A2.5 2.5 0 0 1 3 15v-4a4 4 0 0 1 4-4Zm2.2 3.6a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6Zm5.6 0a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6Z"/>
+              </svg>
+              <span id="since"></span>
+            </div>
+            <hr>
+            <h3>Biografía</h3>
+            <p class="bio" id="bio"></p>
+            <h3>Roles</h3>
+            <div class="roles" id="roles"></div>
+            <hr>
+            <h3>Redes</h3>
+            <div class="links" id="links"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layer side front" id="sT"></div>
+      <div class="layer side front" id="sB"></div>
+      <img class="layer mid" id="mt" alt="">
+      <img class="layer front" id="ft" alt="">
+      <img class="layer front" id="fb" alt="">
+    </div>
+  </main>
+
+  <button class="reroll" id="rr" title="Otra decoración aleatoria">↻ Otra</button>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
